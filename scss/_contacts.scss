@@ -1,0 +1,16 @@
+.contacts {
+  // .contacts__container
+  &__container {
+    --container-width: 35.625rem;
+    text-align: center;
+  }
+  // .contacts__title
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: calc(40 / 60 * 1em);
+    }
+  }
+  // .contacts__content-list
+  &__content-list {
+  }
+}

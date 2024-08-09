@@ -1,0 +1,16 @@
+.skills {
+  // .skills__container
+  &__container {
+    --container-width: 35.625rem;
+    text-align: center;
+  }
+  // .skills__title
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: calc(40 / 60 * 1em);
+    }
+  }
+  // .skills__content-list
+  &__content-list {
+  }
+}

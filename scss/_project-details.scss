@@ -1,0 +1,43 @@
+.project-details {
+  // .project-details__container
+  &__container {
+    --container-width: 54.0625rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+  // .project-details__cover
+  &__cover {
+    border-radius: 0.625rem;
+    box-shadow: var(--box-shadow);
+
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+  // .project-details__description
+  &__description {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+
+    &:not(:last-child) {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  // .project-details__btn
+  &__btn {
+    background-color: var(--page-bg);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+  }
+}

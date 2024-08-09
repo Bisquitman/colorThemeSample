@@ -1,0 +1,40 @@
+.content-list {
+  // .content-list__item
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+  // .content-list__subtitle
+  &__subtitle {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.3;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5em;
+    }
+
+    @include mobile {
+      font-size: 1.875rem;
+    }
+  }
+  // .content-list__description
+  &__description {
+    font-size: 1.125rem;
+    line-height: 1.5;
+
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+  // .content-list__link
+  &__link {
+    color: var(--accent);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--text-color);
+    }
+  }
+}

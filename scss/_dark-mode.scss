@@ -1,0 +1,46 @@
+.dark-mode-btn {
+  grid-area: modeBtn;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  width: 3.1875rem;
+  height: 1.625rem;
+  background-color: #272727;
+  border-radius: 3.125rem;
+  padding: 0.3125rem;
+
+  order: 1;
+
+  @include mobile {
+    order: 0;
+  }
+
+  &::before {
+    --width: 1.5rem;
+    content: "";
+    position: absolute;
+    top: 0.0625rem;
+    left: 0.0625rem;
+    display: block;
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    background-color: var(--white);
+    transition: left 0.2s ease-in;
+  }
+
+  &_active {
+    &::before {
+      // left: 1.625rem;
+      left: calc(100% - var(--width));
+    }
+  }
+
+  // .dark-mode-btn__icon
+  &__icon {
+    position: relative;
+    z-index: 9;
+  }
+}
